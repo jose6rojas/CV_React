@@ -1,32 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #cccbc8;
+}
+
 .App {
+  width: 100%;
+  background: white;
+  width: 750px;
+  margin: 50px auto 50px auto;
+  color: white;
+
+  box-shadow:
+    0 5px 15px 1px rgba(0,0,0,0.6),
+    0 0 200px 1px rgba(255,255,255,0.5);
+}
+
+.App h1 {
+  font-size: 30px;
+  color: black;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.App img {
+  display: block;
+  margin: 15px auto 5px auto;
+  border: solid 3px #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App li {
+  list-style-type: none;
 }
 
-.App-link {
-  color: #61dafb;
+.Category h3 {
+  font-size: 20px;
+  line-height: 50px;
+  padding: 0 10px;
+  margin: 0px;
+  background: black;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.Category ul li p {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 30px;
+  display: block;
+  padding: 0 15px;
+
+  transition: all 0.25s;
+}
+
+.Category ul li p:hover {
+  background: #737373;
+  border-left: 5px solid blue;
+  transition: all 0.55s;
+  color: white
 }
